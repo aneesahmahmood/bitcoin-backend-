@@ -6,7 +6,7 @@ axios
   .then((response) => {
     console.log(response.data);
   });
-
+// need to have a route. need a route called /bitcoin price. get requet so should return empty object 
 // axios
 //   .get(
 //     `https://api.nasa.gov/planetary/apod?api_key=${process.env.NASA_API_KEY}`
