@@ -14,4 +14,3 @@ app.listen(port, () => {
 app.get("/bitcoinprice", (req, res) => {
   res.status(200).json(endpoints);
 });
-
