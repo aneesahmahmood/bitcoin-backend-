@@ -11,6 +11,10 @@ app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
 });
 
-app.get("/bitcoinprice", (req, res) => {
+app.get("/bitcoin-price", (req, res, next) => {
   res.status(200).json(endpoints);
 });
+
+
+//postgres database needs creating/ 1 table bitcoin prices, 2 field, timestamp and price 
+// cron job - create scripts to get new data - adds a new row in database
